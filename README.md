@@ -20,4 +20,28 @@ This project solves the Blocks World problem using the Best First Algorithm and 
 
 ### Installing and using
 
-* Simply pull the code from this repository. If using Eclipe, IntelliJ or another IDE, main.java can be run. If running on terminal, src code needs to be compiled before running main.java.
+* Simply clone the code from this repository. If using Eclipe, IntelliJ or another IDE, main.java can be run.
+* If running on terminal, src code needs to be compiled before running Main. This can be done by navigating into the src directory of the cloned the repository. Then run: ```javac -d ./../bin -sourcepath . Main.java ```. Then the application can be run from the bin directory with the following command: ```java Main```
+* The program expects two lines of input. The first line provides the initial configuration of the blocks and the second line provides the final configuration. The output is the configuration at each step on the path from the initial to the final configuration as well as the number of steps needed.
+* Here is an example of the input:
+```
+   >> java Main
+   >> CAB
+   >> AB C
+```
+* And here is the expected output:
+```
+  [C, A, B]
+  
+  [C, A]
+  [B]
+  
+  [C]
+  [B]
+  [A]
+  
+  [C]
+  [A, B]
+  
+  3
+```
